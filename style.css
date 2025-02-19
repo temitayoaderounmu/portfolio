@@ -830,6 +830,23 @@ noscript {
 	justify-content: flex-start
 }
 
+/* Floating (After Scrolling) */
+.contact-btn-div.floating {
+	position: fixed;
+	bottom: 20px;
+	right: 40px;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	gap: 10px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a floating effect */
+}
+
 .letsTalkBtn {
 	position: relative;
 	border: none;
@@ -972,6 +989,12 @@ noscript {
 .resume-btn:active {
 	transform: translate(2px, 2px)
 }
+
+.resume-hint {
+	font-weight: bold;
+	color: #40ffb3;
+	font-style: italic;
+  }
 
 .about-section-container {
 	width: 100%;
@@ -1532,8 +1555,8 @@ footer {
 }
 
 .footer-avatar-eye {
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-color: #dfd2d2;
 	border-radius: 50%;
 	display: flex;
@@ -1556,8 +1579,9 @@ footer {
 }
 
 .footer-left-eye {
-	box-shadow: -10px -15px 5px rgba(0, 0, 0, .349) inset;
-	position: relative
+	box-shadow: 15px 15px 5px rgba(0, 0, 0, .233) inset, 10px 10px 5px rgba(41, 33, 33, .644) inset;
+	position: relative;
+	margin-left: -5px
 }
 
 .footer-avatar-eye::before {
